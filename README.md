@@ -116,4 +116,8 @@
     - AddPlacePopup
     - ImagePopup
 - Общие компоненты:
-  - PopupWithForm
+    - PopupWithForm
+
+# Задание 2
+
+https://drive.google.com/file/d/1RG756Yt-VWhEzb3hyjNDaUG2piXva-LR/view?usp=sharing
