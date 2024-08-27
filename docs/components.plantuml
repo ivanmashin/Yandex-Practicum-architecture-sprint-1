@@ -1,0 +1,23 @@
+@startuml
+skinparam linetype ortho
+
+component App
+package main {
+    component Main
+    component Card
+    component ImagePopup
+    Main --> Card
+}
+package authorization {
+    component Register
+    component Login
+}
+package profile {
+    component EditAvatarPopup
+    component EditProfilePopup
+}
+
+App -down-> authorization
+App -down-> main
+App -down-> profile
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+rectangle Mesto {
+    usecase "Зарегистрироваться" as register
+    usecase "Авторизоваться в системе" as auth
+    register .left.> auth
+
+    usecase "Создать и редактировать профиль" as profile
+
+    usecase "Получить список пользователей" as users
+    usecase "Получить список карточек" as cards
+    usecase "Загрузить и удалить фотографию" as upload
+    usecase "Поставить лайк на фотографию" as like
+}
+
+user as :Пользователь:
+user --> register
+user --> auth
+user --> users
+user --> like
+user --> cards
+user --> upload
+user --> profile
+@enduml
