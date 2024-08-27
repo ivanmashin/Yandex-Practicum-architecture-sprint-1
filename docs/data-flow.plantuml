@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+
+actor User as user
+database Mongo as mongo
+component Frontend as frontend
+component Backend as backend
+
+backend --> mongo
+user --> frontend
+frontend --> backend
+@enduml

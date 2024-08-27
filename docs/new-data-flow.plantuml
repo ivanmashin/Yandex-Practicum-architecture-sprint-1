@@ -1,0 +1,19 @@
+@startuml
+skinparam linestyle ortho
+
+actor User as user
+database Mongo as mongo
+rectangle Frontend {
+    component "Frontend Cards" as front_cards
+    component "Frontend Profile" as front_profile
+    component "Frontend Auth" as front_auth
+    component "Mobile App" as front_mobile
+
+    front_cards -[hidden]left-> front_profile
+}
+component Backend as backend
+
+user --> Frontend
+Frontend --> backend
+backend -right-> mongo
+@enduml
